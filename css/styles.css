@@ -1,0 +1,30 @@
+*{
+  box-sizing: border-box;
+  /* outline: 1px dashed red; */
+}
+
+:root {
+  --bg-color: #7d8da0;
+  --navbar-bg-color: #000000;
+  --navbar-text-color: #ffffff;
+  --btn-bg-color: #10cf10;
+  --bt-bg-color-hover: rgb(130, 204, 130);
+}
+
+.content {
+  background-color: var(--bg-color);
+}
+
+a.list__item-hidden{
+  display: none;
+}
+
+
+
+
+@media screen and (width > 768px) {
+  a.list__item-hidden{
+    display: block;
+  }
+
+}
