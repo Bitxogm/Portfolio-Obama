@@ -5,7 +5,6 @@
   border-radius: 0.5em;
   text-decoration: none;
   transition: background-color 0.3s ease, color 0.3s ease;
-
   &:hover {
     background-color: var(--bt-bg-color-hover);
     color: var(--navbar-text-color-hover);

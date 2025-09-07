@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="css/banner.css">
   <link rel="stylesheet" href="css/components.css">
   <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/burguer_menu.css">
 
   <title>Obama - Compañero Professional </title>
 </head>
@@ -17,10 +18,19 @@
 <body class="content">
   <!-- Header -->
   <header class="header">
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+    <label for="menu-toggle" class="menu-icon burguer__menu-hidden">
+      <span class="burguer-line"></span>
+    </label>
+    <ul class="nav-menu ">
+      <li><a href="#">Sobre mi</a></li>
+      <li><a href="#">Proyecto</a></li>
+      <li><a href="#">Contacto</a></li>
+      <li><a href="#">Videos</a></li>
+    </ul>
+
     <img src="assets/images/Logo_Whippet.png" alt="Logo-Whippet">
     <nav class="navbar">
-      
-      
       <ul class="list">
         <li class="list__item">
           <a href="#about-me" class=" btn list__item-hidden">Sobre mi </a>
@@ -35,41 +45,25 @@
           <a href="#video" class="btn list__item-hidden">Videos</a>
         </li>
       </ul>
-      
     </nav>
   </header>
 
-
-
-
-
-
-
   <!-- Banner -->
-  <main >
-    <h1>Bienvenido a mi casa</h1>
+  <main>
+    <h1>Bienvenido </h1>
     <section class="banner">
-    <div class="banner__img"></div>
+      <div class="banner__img"></div>
       <div class="banner__content">
-
         <h2>Whippet Profesional</h2>
         <p>Corredor a ratos , dormilon constante</p>
         <p>Contrata mis servicios</p>
       </div>
     </section>
-
-
-    <!-- About me -->
-
-
   </main>
 
-
-
   <footer class="footer">
-     &copy;2025 Otaku & Obama Productions
+    &copy;2025 Otaku & Obama Productions
   </footer>
-
 </body>
 
 </html>

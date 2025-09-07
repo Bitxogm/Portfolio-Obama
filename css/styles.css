@@ -9,6 +9,7 @@
   --navbar-text-color: #ffffff;
   --btn-bg-color: #10cf10;
   --bt-bg-color-hover: rgb(130, 204, 130);
+  --banner-text: #af1010;
 }
 
 .content {
@@ -19,12 +20,15 @@ a.list__item-hidden{
   display: none;
 }
 
-
-
-
 @media screen and (width > 768px) {
   a.list__item-hidden{
     display: block;
   }
-
 }
+
+
+
+
+
+
+
