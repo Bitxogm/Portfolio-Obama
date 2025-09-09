@@ -9,8 +9,9 @@
   <link rel="stylesheet" href="css/header.css">
   <link rel="stylesheet" href="css/banner.css">
   <link rel="stylesheet" href="css/components.css">
-  <link rel="stylesheet" href="css/footer.css">
   <link rel="stylesheet" href="css/burguer_menu.css">
+  <link rel="stylesheet" href="css/gallery.css">
+  <link rel="stylesheet" href="css/footer.css">
 
   <title>Obama - Compañero Professional </title>
 </head>
@@ -18,6 +19,9 @@
 <body class="content">
   <!-- Header -->
   <header class="header">
+
+    <!-- Burguer Menu -->
+     <!-- TODO : Border, shadows, real links, hover efect -->
     <input type="checkbox" id="menu-toggle" class="menu-toggle">
     <label for="menu-toggle" class="menu-icon burguer__menu-hidden">
       <span class="burguer-line"></span>
@@ -28,21 +32,21 @@
       <li><a href="#">Contacto</a></li>
       <li><a href="#">Videos</a></li>
     </ul>
-
+    <!-- Logo Whippet -->
     <img src="assets/images/Logo_Whippet.png" alt="Logo-Whippet">
     <nav class="navbar">
       <ul class="list">
         <li class="list__item">
-          <a href="#about-me" class=" btn list__item-hidden">Sobre mi </a>
+          <a href="#about-me.hmtl" class=" btn list__item-hidden">Sobre mi </a>
         </li>
         <li class="list__item">
-          <a href="#projects" class="btn list__item-hidden">Proyectos</a>
+          <a href="#projects.html" class="btn list__item-hidden">Proyectos</a>
         </li>
         <li class="list__item">
-          <a href="#contact" class="btn list__item-hidden">Contacto</a>
+          <a href="#contact.html" class="btn list__item-hidden">Contacto</a>
         </li>
         <li class="list__item">
-          <a href="#video" class="btn list__item-hidden">Videos</a>
+          <a href="#video.html" class="btn list__item-hidden">Videos</a>
         </li>
       </ul>
     </nav>
@@ -50,8 +54,89 @@
 
   <!-- Banner -->
   <main>
-    <h1>Bienvenido </h1>
+    <!-- About Section -->
+     <!-- TODO: Mejorar estilos  -->
+    <section class="about" id="about">
+       <h1>Bienvenido </h1>
+
+      <div class="container">
+        <h2 class="section__title">Sobre mí</h2>
+            <p>Soy Obama, un whippet blanco y negro de 5 años con amplia experiencia en carreras de alta velocidad y
+              relajación profesional. Mi especialidad es la combinación perfecta entre elegancia atlética y comodidad
+              doméstica.</p>
+            <p>Cuando no estoy corriendo a 50 km/h, me dedico a la consultoría en optimización de espacios de descanso y
+              al modelaje para fotografía de alta gama. También soy experto en detección de las mantas más cómodas y en
+              la búsqueda del rincón perfecto para la siesta.</p>
+            <p>Con más de 3 años de experiencia profesional en el arte de la relajación, he perfeccionado técnicas
+              únicas que combinan la máxima velocidad con el máximo confort.</p>
+              <img src="" alt="">
+      </div>
+    </section>
+
+    <!-- Gallery -->
+     <!-- TODO: Ubicar , sizes , centrar , animations scale -->
+     <section class="gallery">
+      <h2>Gallery</h2>
+      <div class="gallery__container">
+        <img src="assets/images/perfil.jpg" alt="">
+        <img src="assets/images/In_the_beach.jpg" alt="">
+        <img src="assets/images/In_the_bed.jpg" alt="">
+        <img src="assets/images/Sleeping.jpg" alt="">
+        <img src="assets/images/Obama2.jpg" alt="">
+        <img src="assets/images/Big.jpg" alt="">
+      </div>
+    </section>
+
+    <!-- Skilss -->
+
+    <!-- TODO: Mejorar , ubicacion, tamaño, centraje , animaciones -->
+    <section id="habilidades">
+      <h2>Mis Habilidades</h2>
+
+      <div class="habilidad">
+        <label for="velocidad">Velocidad</label>
+        <progress id="velocidad" value="90" max="100"></progress>
+        <span class="porcentaje">90%</span>
+      </div>
+
+      <div class="habilidad">
+        <label for="elegancia">Elegancia</label>
+        <progress id="elegancia" value="85" max="100"></progress>
+        <span class="porcentaje">85%</span>
+      </div>
+
+      <div class="habilidad">
+        <label for="modelaje">Modelaje</label>
+        <progress id="modelaje" value="70" max="100"></progress>
+        <span class="porcentaje">70%</span>
+      </div>
+      <div class="habilidad">
+        <label for="deteccion_mantas">Deteccion de mantas</label>
+        <progress id="deteccion_mantas" value="95" max="100"></progress>
+        <span class="porcentaje">95%</span>
+      </div>
+
+      <div class="habilidad">
+        <label for="optimizacion_sofa">Optimizacion de sofa</label>
+        <progress id="optimizacion_sofa" value="55" max="100"></progress>
+        <span class="porcentaje">55%</span>
+      </div>
+
+      <div class="habilidad">
+        <label for="relajacion">Relajacion</label>
+        <progress id="relajacion" value="99" max="100"></progress>
+        <span class="porcentaje">99%</span>
+      </div>
+    </section>
+
+
+
+
+<!-- TODO: Mejora fondo banner -->
+
+ 
     <section class="banner">
+      <img  style="width: 50%; z-index: -99;" src="assets/images/Laredo1.jpg" alt="">
       <div class="banner__img"></div>
       <div class="banner__content">
         <h2>Whippet Profesional</h2>
@@ -60,6 +145,8 @@
       </div>
     </section>
   </main>
+
+  <!-- TODO: Iconos/enlaces redes sociales , font weight, (efectos) , font style -->
 
   <footer class="footer">
     &copy;2025 Otaku & Obama Productions

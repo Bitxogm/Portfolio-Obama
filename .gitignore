@@ -38,7 +38,7 @@ node_modules/
 Thumbs.db
 
 #Ejecutables
-scripts/
+scripts
 **/*.sh
 
 #Firebase
