@@ -1,0 +1,108 @@
+.gallery__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  overflow: hidden;
+}
+
+  
+
+/* Animacion imagenes */
+.image-container {
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  &:hover img {
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+}
+
+/* Contenedor de la barra */
+.progress-bar {
+  height: 20px;
+  width: 200px;
+  background-color: lightgray;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+/* La barra que se anima */
+.progress-fill {
+  height: 20px;
+  background-color: #d4af37;
+  width: 0%;
+  animation: progressbar 2s ease-in-out 0.3s forwards;
+}
+
+/* Animación */
+@keyframes progressbar {
+  0% { width: 0%; }
+  100% { width: 100%; }
+}
+
+.progress-fill[data-value="85"] {
+  animation: progressbar85 4s ease-in-out 0.5s forwards;
+}
+.progress-fill[data-value="90"] {
+  animation: progressbar90 4s ease-in-out 1s forwards;
+}
+.progress-fill[data-value="99"] {
+  animation: progressbar99 4s ease-in-out 1.5s forwards;
+}
+.progress-fill[data-value="55"] {
+  animation: progressbar55 4s ease-in-out 2s forwards;
+}
+.progress-fill[data-value="70"] {
+  animation: progressbar70 4s ease-in-out 2.5s forwards;
+}
+.progress-fill[data-value="95"] {
+  animation: progressbar95 4s ease-in-out 3s forwards;
+}
+
+@keyframes progressbar85 {
+  0% { width: 0%; }
+  100% { width: 85%; }
+}
+@keyframes progressbar90 {
+  0% { width: 0%; }
+  100% { width: 90%; }
+}
+@keyframes progressbar99 {
+  0% { width: 0%; }
+  100% { width: 99%; }
+}
+@keyframes progressbar55 {
+  0% { width: 0%; }
+  100% { width: 55%; }
+}
+@keyframes progressbar70 {
+  0% { width: 0%; }
+  100% { width: 70%; }
+}
+@keyframes progressbar95 {
+  0% { width: 0%; }
+  100% { width: 95%; }
+}
+  
+
+@media screen and (width > 768px) {
+/* Hacer grid template pàra poner tres imagenes por fila  */
+  .gallery__container {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+}
+

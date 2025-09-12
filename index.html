@@ -7,10 +7,12 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/header.css">
-  <link rel="stylesheet" href="css/banner.css">
   <link rel="stylesheet" href="css/components.css">
   <link rel="stylesheet" href="css/burguer_menu.css">
-  <link rel="stylesheet" href="css/gallery.css">
+  <link rel="stylesheet" href="css/about-me.css">
+  <link rel="stylesheet" href="css/banner.css">
+  <link rel="stylesheet" href="css/skills-animation.css">
+  <link rel="stylesheet" href="css/habilidades.css">
   <link rel="stylesheet" href="css/footer.css">
 
   <title>Obama - Compañero Professional </title>
@@ -21,122 +23,202 @@
   <header class="header">
 
     <!-- Burguer Menu -->
-     <!-- TODO : Border, shadows, real links, hover efect -->
+    <!-- TODO : Border, shadows, real links, hover efect -->
     <input type="checkbox" id="menu-toggle" class="menu-toggle">
     <label for="menu-toggle" class="menu-icon burguer__menu-hidden">
       <span class="burguer-line"></span>
     </label>
     <ul class="nav-menu ">
-      <li><a href="#">Sobre mi</a></li>
-      <li><a href="#">Proyecto</a></li>
-      <li><a href="#">Contacto</a></li>
-      <li><a href="#">Videos</a></li>
+      <li><a href="#about-me">Sobre mi</a></li>
+      <li><a href="#contact">Contacto</a></li>
+      <li><a href="#habilidades">Habilidades</a></li>
+      <li><a href="video.html" target="_blank" rel="noopener noreferrer">Videos</a></li>
     </ul>
+
     <!-- Logo Whippet -->
     <img src="assets/images/Logo_Whippet.png" alt="Logo-Whippet">
     <nav class="navbar">
       <ul class="list">
         <li class="list__item">
-          <a href="#about-me.hmtl" class=" btn list__item-hidden">Sobre mi </a>
+          <a href="#about-me" class=" btn list__item-hidden">Sobre mi </a>
         </li>
         <li class="list__item">
-          <a href="#projects.html" class="btn list__item-hidden">Proyectos</a>
+          <a href="#contact" class="btn list__item-hidden">Contacto</a>
         </li>
         <li class="list__item">
-          <a href="#contact.html" class="btn list__item-hidden">Contacto</a>
+          <a href="#habilidades" class="btn list__item-hidden">Habilidades</a>
         </li>
         <li class="list__item">
-          <a href="#video.html" class="btn list__item-hidden">Videos</a>
+          <a href="video.html" target="_blank" rel="noopener noreferrer" class="btn list__item-hidden">Videos</a>
         </li>
       </ul>
     </nav>
   </header>
 
+
+
+
+
   <!-- Banner -->
   <main>
     <!-- About Section -->
-     <!-- TODO: Mejorar estilos  -->
-    <section class="about" id="about">
-       <h1>Bienvenido </h1>
-
-      <div class="container">
-        <h2 class="section__title">Sobre mí</h2>
-            <p>Soy Obama, un whippet blanco y negro de 5 años con amplia experiencia en carreras de alta velocidad y
-              relajación profesional. Mi especialidad es la combinación perfecta entre elegancia atlética y comodidad
-              doméstica.</p>
-            <p>Cuando no estoy corriendo a 50 km/h, me dedico a la consultoría en optimización de espacios de descanso y
-              al modelaje para fotografía de alta gama. También soy experto en detección de las mantas más cómodas y en
-              la búsqueda del rincón perfecto para la siesta.</p>
-            <p>Con más de 3 años de experiencia profesional en el arte de la relajación, he perfeccionado técnicas
-              únicas que combinan la máxima velocidad con el máximo confort.</p>
-              <img src="" alt="">
-      </div>
+    <!-- TODO: Mejorar estilos  -->
+    <section class="about-me" id="about-me">
+      <h1>Bienvenido </h1>
+      <h2 class="section__title">Sobre mí</h2>
+      <p>Soy Obama, un whippet blanco y negro de 7 años con amplia experiencia en carreras de alta velocidad y
+        relajación profesional. Mi especialidad es la combinación perfecta entre elegancia atlética y comodidad
+        doméstica.</p>
+      <p>Cuando no estoy corriendo a 50 km/h, me dedico a la consultoría en optimización de espacios de descanso y
+        al modelaje para fotografía de alta gama. También soy experto en detección de las mantas más cómodas y en
+        la búsqueda del rincón perfecto para la siesta.</p>
+      <p>Con más de 7 años de experiencia profesional en el arte de la relajación, he perfeccionado técnicas
+        únicas que combinan la máxima velocidad con el máximo confort.</p>
     </section>
 
-    <!-- Gallery -->
-     <!-- TODO: Ubicar , sizes , centrar , animations scale -->
-     <section class="gallery">
-      <h2>Gallery</h2>
-      <div class="gallery__container">
-        <img src="assets/images/perfil.jpg" alt="">
-        <img src="assets/images/In_the_beach.jpg" alt="">
-        <img src="assets/images/In_the_bed.jpg" alt="">
-        <img src="assets/images/Sleeping.jpg" alt="">
-        <img src="assets/images/Obama2.jpg" alt="">
-        <img src="assets/images/Big.jpg" alt="">
-      </div>
-    </section>
 
-    <!-- Skilss -->
+
+
+    <!-- Habilidades/Galeria -->
+    <!-- TODO: Hacer grid template para tamaño supeior a 768 px , tres imagenes por fila -->
+
+<section class="habilidades" id="habilidades">
+  <h2>Mis Habilidades</h2>
+  <div class="gallery__container">
+
+    <div class="habilidad">
+      <label>Elegancia</label>
+      <div class="progress-bar" 
+           role="progressbar"
+           aria-valuenow="85"
+           aria-valuemin="0"
+           aria-valuemax="100"
+           aria-label="Elegancia: 85%">
+        <div class="progress-fill" data-value="85"></div>
+      </div>
+      <span class="porcentaje">85%</span>
+      <div class="image-container">
+        <img src="assets/images/perfil.jpg" alt="Obama posando elegantemente">
+      </div>
+    </div>
+
+
+    <div class="habilidad">
+      <label>Velocidad</label>
+      <div class="progress-bar" 
+           role="progressbar"
+           aria-valuenow="90"
+           aria-valuemin="0"
+           aria-valuemax="100"
+           aria-label="Velocidad: 90%">
+        <div class="progress-fill" data-value="90"></div>
+      </div>
+      <span class="porcentaje">90%</span>
+      <div class="image-container">
+        <img src="assets/images/In_the_beach.jpg" alt="Obama corriendo en la playa">
+      </div>
+    </div>
+
+
+    <div class="habilidad">
+      <label>Relajación</label>
+      <div class="progress-bar" 
+           role="progressbar"
+           aria-valuenow="99"
+           aria-valuemin="0"
+           aria-valuemax="100"
+           aria-label="Relajación: 99%">
+        <div class="progress-fill" data-value="99"></div>
+      </div>
+      <span class="porcentaje">99%</span>
+      <div class="image-container">
+        <img src="assets/images/In_the_bed.jpg" alt="Obama relajándose en la cama">
+      </div>
+    </div>
+
+
+    <div class="habilidad">
+      <label>Optimización de sofá</label>
+      <div class="progress-bar" 
+           role="progressbar"
+           aria-valuenow="55"
+           aria-valuemin="0"
+           aria-valuemax="100"
+           aria-label="Optimización de sofá: 55%">
+        <div class="progress-fill" data-value="55"></div>
+      </div>
+      <span class="porcentaje">55%</span>
+      <div class="image-container">
+        <img src="assets/images/Sleeping.jpg" alt="Obama durmiendo en el sofá">
+      </div>
+    </div>
+      
+    <div class="habilidad">
+      <label>Modelaje</label>
+      <div class="progress-bar" 
+           role="progressbar"
+           aria-valuenow="70"
+           aria-valuemin="0"
+           aria-valuemax="100"
+           aria-label="Modelaje: 70%">
+        <div class="progress-fill" data-value="70"></div>
+      </div>
+      <span class="porcentaje">70%</span>
+      <div class="image-container">
+        <img src="assets/images/Obama2.jpg" alt="Obama en sesión de modelaje">
+      </div>
+    </div>
+      
+    <div class="habilidad">
+      <label>Detección de mantas</label>
+      <div class="progress-bar" 
+           role="progressbar"
+           aria-valuenow="95"
+           aria-valuemin="0"
+           aria-valuemax="100"
+           aria-label="Detección de mantas: 95%">
+        <div class="progress-fill" data-value="95"></div>
+      </div>
+      <span class="porcentaje">95%</span>
+      <div class="image-container">
+        <img src="assets/images/Big.jpg" alt="Obama detectando la manta más cómoda">
+      </div>
+    </div>
+  </div>
+</section>
+    
+
+        
+
+
+
+
+
+
+    
 
     <!-- TODO: Mejorar , ubicacion, tamaño, centraje , animaciones -->
-    <section id="habilidades">
-      <h2>Mis Habilidades</h2>
-
-      <div class="habilidad">
-        <label for="velocidad">Velocidad</label>
-        <progress id="velocidad" value="90" max="100"></progress>
-        <span class="porcentaje">90%</span>
-      </div>
-
-      <div class="habilidad">
-        <label for="elegancia">Elegancia</label>
-        <progress id="elegancia" value="85" max="100"></progress>
-        <span class="porcentaje">85%</span>
-      </div>
-
-      <div class="habilidad">
-        <label for="modelaje">Modelaje</label>
-        <progress id="modelaje" value="70" max="100"></progress>
-        <span class="porcentaje">70%</span>
-      </div>
-      <div class="habilidad">
-        <label for="deteccion_mantas">Deteccion de mantas</label>
-        <progress id="deteccion_mantas" value="95" max="100"></progress>
-        <span class="porcentaje">95%</span>
-      </div>
-
-      <div class="habilidad">
-        <label for="optimizacion_sofa">Optimizacion de sofa</label>
-        <progress id="optimizacion_sofa" value="55" max="100"></progress>
-        <span class="porcentaje">55%</span>
-      </div>
-
-      <div class="habilidad">
-        <label for="relajacion">Relajacion</label>
-        <progress id="relajacion" value="99" max="100"></progress>
-        <span class="porcentaje">99%</span>
-      </div>
-    </section>
 
 
 
 
-<!-- TODO: Mejora fondo banner -->
 
- 
+
+
+
+
+
+
+
+
+
+
+
+    <!-- TODO: Mejora fondo banner -->
+
+
     <section class="banner">
-      <img  style="width: 50%; z-index: -99;" src="assets/images/Laredo1.jpg" alt="">
+      <img style="width: 50%; z-index: -99;" src="assets/images/Laredo1.jpg" alt="">
       <div class="banner__img"></div>
       <div class="banner__content">
         <h2>Whippet Profesional</h2>
@@ -144,6 +226,8 @@
         <p>Contrata mis servicios</p>
       </div>
     </section>
+
+    <section class="contact" id="contact"></section>
   </main>
 
   <!-- TODO: Iconos/enlaces redes sociales , font weight, (efectos) , font style -->
