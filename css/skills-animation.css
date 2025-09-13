@@ -1,8 +1,16 @@
+.habilidad {
+  border: 2px #3f3636 solid;
+  padding: 0.3em;
+  border-radius: 10px;
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.3);
+}
+
+
 .gallery__container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  text-align: center;
   gap: 20px;
   overflow: hidden;
 }
@@ -16,8 +24,9 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   
   img {
-    width: 100%;
-    height: 100%;
+      width: 200px;
+    height: 200px;
+
     object-fit: cover;
     transition: transform 0.3s ease-in-out;
   }
@@ -37,7 +46,7 @@
   overflow: hidden;
 }
 
-/* La barra que se anima */
+/* Animacon barra */
 .progress-fill {
   height: 20px;
   background-color: #d4af37;
@@ -96,13 +105,28 @@
 }
   
 
-@media screen and (width > 768px) {
 /* Hacer grid template pàra poner tres imagenes por fila  */
+
+
+@media screen and (width > 768px) {
   .gallery__container {
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
+    margin: 0 auto;
+  }
+    .habilidad {
+    max-width: 300px; 
+    margin: 0 auto; 
+  }
+  
+  
+  .image-container img {
+    width: 200px;
+    height: 200px;
+  }
+  
+  .progress-bar {
+    width: 200px;
   }
 }
-

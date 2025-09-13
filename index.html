@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="css/about-me.css">
   <link rel="stylesheet" href="css/banner.css">
   <link rel="stylesheet" href="css/skills-animation.css">
-  <link rel="stylesheet" href="css/habilidades.css">
+  <link rel="stylesheet" href="css/contact.css">
   <link rel="stylesheet" href="css/footer.css">
 
   <title>Obama - Compañero Professional </title>
@@ -82,122 +82,86 @@
     <!-- Habilidades/Galeria -->
     <!-- TODO: Hacer grid template para tamaño supeior a 768 px , tres imagenes por fila -->
 
-<section class="habilidades" id="habilidades">
-  <h2>Mis Habilidades</h2>
-  <div class="gallery__container">
+    <section class="habilidades" id="habilidades">
+      <h2>Mis Habilidades</h2>
+      <div class="gallery__container">
 
-    <div class="habilidad">
-      <label>Elegancia</label>
-      <div class="progress-bar" 
-           role="progressbar"
-           aria-valuenow="85"
-           aria-valuemin="0"
-           aria-valuemax="100"
-           aria-label="Elegancia: 85%">
-        <div class="progress-fill" data-value="85"></div>
+        <div class="habilidad">
+          <label>Elegancia</label>
+          <span class="porcentaje">85%</span>
+          <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"
+            aria-label="Elegancia: 85%">
+            <div class="progress-fill" data-value="85"></div>
+          </div>
+          <div class="image-container">
+            <img src="assets/images/perfil.jpg" alt="Obama posando elegantemente">
+          </div>
+        </div>
+
+
+        <div class="habilidad">
+          <label>Velocidad</label>
+          <span class="porcentaje">90%</span>
+          <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"
+            aria-label="Velocidad: 90%">
+            <div class="progress-fill" data-value="90"></div>
+          </div>
+          <div class="image-container">
+            <img src="assets/images/In_the_beach.jpg" alt="Obama tumbado en la playa">
+          </div>
+        </div>
+
+
+        <div class="habilidad">
+          <label>Relajación</label>
+          <span class="porcentaje">99%</span>
+          <div class="progress-bar" role="progressbar" aria-valuenow="99" aria-valuemin="0" aria-valuemax="100"
+            aria-label="Relajación: 99%">
+            <div class="progress-fill" data-value="99"></div>
+          </div>
+          <div class="image-container">
+            <img src="assets/images/In_the_bed.jpg" alt="Obama relajándose en la cama">
+          </div>
+        </div>
+
+
+        <div class="habilidad">
+          <label>Optimización de sofá</label>
+          <span class="porcentaje">55%</span>
+          <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"
+            aria-label="Optimización de sofá: 55%">
+            <div class="progress-fill" data-value="55"></div>
+          </div>
+          <div class="image-container">
+            <img src="assets/images/Sleeping.jpg" alt="Obama durmiendo en el sofá">
+          </div>
+        </div>
+
+        <div class="habilidad">
+          <label>Modelaje</label>
+          <span class="porcentaje">70%</span>
+          <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
+            aria-label="Modelaje: 70%">
+            <div class="progress-fill" data-value="70"></div>
+          </div>
+          <div class="image-container">
+            <img src="assets/images/Obama2.jpg" alt="Obama en sesión de modelaje">
+          </div>
+        </div>
+
+        <div class="habilidad">
+          <label>Pasear al sol</label>
+          <span class="porcentaje">95%</span>
+          <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"
+            aria-label="Detección de mantas: 95%">
+            <div class="progress-fill" data-value="95"></div>
+          </div>
+          <div class="image-container">
+            <img src="assets/images/Big.jpg" alt="Obama al sol en la playa">
+          </div>
+        </div>
       </div>
-      <span class="porcentaje">85%</span>
-      <div class="image-container">
-        <img src="assets/images/perfil.jpg" alt="Obama posando elegantemente">
-      </div>
-    </div>
-
-
-    <div class="habilidad">
-      <label>Velocidad</label>
-      <div class="progress-bar" 
-           role="progressbar"
-           aria-valuenow="90"
-           aria-valuemin="0"
-           aria-valuemax="100"
-           aria-label="Velocidad: 90%">
-        <div class="progress-fill" data-value="90"></div>
-      </div>
-      <span class="porcentaje">90%</span>
-      <div class="image-container">
-        <img src="assets/images/In_the_beach.jpg" alt="Obama corriendo en la playa">
-      </div>
-    </div>
-
-
-    <div class="habilidad">
-      <label>Relajación</label>
-      <div class="progress-bar" 
-           role="progressbar"
-           aria-valuenow="99"
-           aria-valuemin="0"
-           aria-valuemax="100"
-           aria-label="Relajación: 99%">
-        <div class="progress-fill" data-value="99"></div>
-      </div>
-      <span class="porcentaje">99%</span>
-      <div class="image-container">
-        <img src="assets/images/In_the_bed.jpg" alt="Obama relajándose en la cama">
-      </div>
-    </div>
-
-
-    <div class="habilidad">
-      <label>Optimización de sofá</label>
-      <div class="progress-bar" 
-           role="progressbar"
-           aria-valuenow="55"
-           aria-valuemin="0"
-           aria-valuemax="100"
-           aria-label="Optimización de sofá: 55%">
-        <div class="progress-fill" data-value="55"></div>
-      </div>
-      <span class="porcentaje">55%</span>
-      <div class="image-container">
-        <img src="assets/images/Sleeping.jpg" alt="Obama durmiendo en el sofá">
-      </div>
-    </div>
-      
-    <div class="habilidad">
-      <label>Modelaje</label>
-      <div class="progress-bar" 
-           role="progressbar"
-           aria-valuenow="70"
-           aria-valuemin="0"
-           aria-valuemax="100"
-           aria-label="Modelaje: 70%">
-        <div class="progress-fill" data-value="70"></div>
-      </div>
-      <span class="porcentaje">70%</span>
-      <div class="image-container">
-        <img src="assets/images/Obama2.jpg" alt="Obama en sesión de modelaje">
-      </div>
-    </div>
-      
-    <div class="habilidad">
-      <label>Detección de mantas</label>
-      <div class="progress-bar" 
-           role="progressbar"
-           aria-valuenow="95"
-           aria-valuemin="0"
-           aria-valuemax="100"
-           aria-label="Detección de mantas: 95%">
-        <div class="progress-fill" data-value="95"></div>
-      </div>
-      <span class="porcentaje">95%</span>
-      <div class="image-container">
-        <img src="assets/images/Big.jpg" alt="Obama detectando la manta más cómoda">
-      </div>
-    </div>
-  </div>
-</section>
-    
-
-        
-
-
-
-
-
-
-    
-
-    <!-- TODO: Mejorar , ubicacion, tamaño, centraje , animaciones -->
+    </section>
 
 
 
@@ -209,16 +173,10 @@
 
 
 
-
-
-
-
-
-    <!-- TODO: Mejora fondo banner -->
 
 
     <section class="banner">
-      <img style="width: 50%; z-index: -99;" src="assets/images/Laredo1.jpg" alt="">
+      <!-- <img style="width: 50%; z-index: -99;" src="assets/images/Laredo1.jpg" alt=""> -->
       <div class="banner__img"></div>
       <div class="banner__content">
         <h2>Whippet Profesional</h2>
@@ -227,14 +185,91 @@
       </div>
     </section>
 
-    <section class="contact" id="contact"></section>
+    <section class="contact" id="contact">
+      <div class="form-container">
+        <h2 class="section__title">¿Quieres contratarme?</h2>
+        <form class="contact__form" method="POST" action="#" novalidate>
+
+          <div class="form__group">
+            <label for="name" class="form__label">Nombre</label>
+            <input type="text" id="name" name="name" class="form__input" placeholder="Escribe tu nombre" required>
+          </div>
+
+          <div class="form__group">
+            <label for="lastname" class="form__label">Apellidos</label>
+            <input type="text" id="lastname" name="lastname" class="form__input" placeholder="Escribe tus apellidos" required>
+          </div>
+
+          <div class="form__group">
+            <label for="phone" class="form__label">Teléfono</label>
+            <input type="tel" id="phone" name="phone" class="form__input" placeholder="Escribe tu teléfono"  required>
+          </div>
+
+          <fieldset class="form__fieldset">
+            <legend class="form__legend">¿Cómo me conociste?</legend>
+
+            <div class="form__radio-group">
+              <input type="radio" id="university" name="how_met" value="university" required>
+              <label for="university" class="form__radio-label">Universidad</label>
+            </div>
+
+            <div class="form__radio-group">
+              <input type="radio" id="keepcoding" name="how_met" value="keepcoding" required>
+              <label for="keepcoding" class="form__radio-label">Keepcoding kick-off</label>
+            </div>
+
+            <div class="form__radio-group">
+              <input type="radio" id="school" name="how_met" value="school" required>
+              <label for="school" class="form__radio-label">Colegio</label>
+            </div>
+
+            <div class="form__radio-group">
+              <input type="radio" id="github" name="how_met" value="github" required>
+              <label for="github" class="form__radio-label">En Github</label>
+            </div>
+          </fieldset>
+
+          <div class="form__group">
+            <label for="github-user" class="form__label">Github username</label>
+            <input type="text" id="github-user" name="github_user" class="form__input" pattern="^@[^\s]+"
+              placeholder="@username">
+          </div>
+
+          <div class="form__group">
+            <label for="message" class="form__label">Mensaje de contacto</label>
+            <textarea id="message" name="message" class="form__textarea" maxlength="180" rows="5" required
+              placeholder="Cuéntame qué tipo de servicio necesitas..."></textarea>
+          </div>
+
+          <div class="form__group">
+            <label class="form__checkbox-label">
+              <input type="checkbox" name="newsletter" class="form__checkbox">
+              <span class="form__checkmark"></span>
+              Quiero acceso a la newsletter
+            </label>
+          </div>
+
+          <div class="form__buttons">
+            <button type="submit" class="btn btn--primary">Enviar</button>
+            <button type="reset" class="btn btn--secondary">Reset</button>
+          </div>
+
+        </form>
+      </div>
+    </section>
   </main>
 
   <!-- TODO: Iconos/enlaces redes sociales , font weight, (efectos) , font style -->
 
   <footer class="footer">
-    &copy;2025 Otaku & Obama Productions
-  </footer>
+  
+
+      <img src="assets/icons/icons8-github-100.png" alt="logo-imagen github">
+      <img src="assets/icons/icons8-linkedin-100.png" alt="logo-imagen linkedin">
+      <img src="assets/icons/icons8-netlify-72.png" alt="logo-imagen netlify">
+      <!-- <p>&copy;Otaku & Obama Productions</p>  -->
+
+    </footer>
 </body>
 
 </html>
