@@ -4,11 +4,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bad+Script&family=DM+Serif+Text:ital@0;1&family=Montserrat+Alternates:ital,wght@0,400;0,700;1,300&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/header.css">
   <link rel="stylesheet" href="css/components.css">
-  <link rel="stylesheet" href="css/burguer_menu.css">
+  <link rel="stylesheet" href="css/burguer-menu.css">
   <link rel="stylesheet" href="css/about-me.css">
   <link rel="stylesheet" href="css/banner.css">
   <link rel="stylesheet" href="css/skills-animation.css">
@@ -25,7 +30,7 @@
     <!-- Burguer Menu -->
     <!-- TODO : Border, shadows, real links, hover efect -->
     <input type="checkbox" id="menu-toggle" class="menu-toggle">
-    <label for="menu-toggle" class="menu-icon burguer__menu-hidden">
+    <label for="menu-toggle" class="menu-icon burguer-menu-hidden">
       <span class="burguer-line"></span>
     </label>
     <ul class="nav-menu ">
@@ -39,33 +44,28 @@
     <img src="assets/images/Logo_Whippet.png" alt="Logo-Whippet">
     <nav class="navbar">
       <ul class="list">
-        <li class="list__item">
-          <a href="#about-me" class=" btn list__item-hidden">Sobre mi </a>
+        <li class="list-item">
+          <a href="#about-me" class=" btn list-item-hidden">Sobre mi </a>
         </li>
         <li class="list__item">
-          <a href="#contact" class="btn list__item-hidden">Contacto</a>
+          <a href="#contact" class="btn list-item-hidden">Contacto</a>
         </li>
         <li class="list__item">
-          <a href="#habilidades" class="btn list__item-hidden">Habilidades</a>
+          <a href="#habilidades" class="btn list-item-hidden">Habilidades</a>
         </li>
         <li class="list__item">
-          <a href="video.html" target="_blank" rel="noopener noreferrer" class="btn list__item-hidden">Videos</a>
+          <a href="video.html" target="_blank" rel="noopener noreferrer" class="btn list-item-hidden">Videos</a>
         </li>
       </ul>
     </nav>
   </header>
 
-
-
-
-
-  <!-- Banner -->
   <main>
     <!-- About Section -->
     <!-- TODO: Mejorar estilos  -->
-    <section class="about-me" id="about-me">
+    <section id="about-me">
       <h1>Bienvenido </h1>
-      <h2 class="section__title">Sobre mí</h2>
+      <h2>Sobre mí</h2>
       <p>Soy Obama, un whippet blanco y negro de 7 años con amplia experiencia en carreras de alta velocidad y
         relajación profesional. Mi especialidad es la combinación perfecta entre elegancia atlética y comodidad
         doméstica.</p>
@@ -76,19 +76,16 @@
         únicas que combinan la máxima velocidad con el máximo confort.</p>
     </section>
 
-
-
-
     <!-- Habilidades/Galeria -->
     <!-- TODO: Hacer grid template para tamaño supeior a 768 px , tres imagenes por fila -->
 
-    <section class="habilidades" id="habilidades">
+    <section class="skills" id="habilidades">
       <h2>Mis Habilidades</h2>
-      <div class="gallery__container">
+      <div class="gallery-container">
 
-        <div class="habilidad">
+        <div class="skill">
           <label>Elegancia</label>
-          <span class="porcentaje">85%</span>
+          <span class="percentage">85%</span>
           <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"
             aria-label="Elegancia: 85%">
             <div class="progress-fill" data-value="85"></div>
@@ -98,10 +95,9 @@
           </div>
         </div>
 
-
-        <div class="habilidad">
+        <div class="skill">
           <label>Velocidad</label>
-          <span class="porcentaje">90%</span>
+          <span class="percentage">90%</span>
           <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"
             aria-label="Velocidad: 90%">
             <div class="progress-fill" data-value="90"></div>
@@ -111,10 +107,9 @@
           </div>
         </div>
 
-
-        <div class="habilidad">
+        <div class="skill">
           <label>Relajación</label>
-          <span class="porcentaje">99%</span>
+          <span class="percentage">99%</span>
           <div class="progress-bar" role="progressbar" aria-valuenow="99" aria-valuemin="0" aria-valuemax="100"
             aria-label="Relajación: 99%">
             <div class="progress-fill" data-value="99"></div>
@@ -124,10 +119,9 @@
           </div>
         </div>
 
-
-        <div class="habilidad">
+        <div class="skill">
           <label>Optimización de sofá</label>
-          <span class="porcentaje">55%</span>
+          <span class="percentage">55%</span>
           <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"
             aria-label="Optimización de sofá: 55%">
             <div class="progress-fill" data-value="55"></div>
@@ -137,9 +131,9 @@
           </div>
         </div>
 
-        <div class="habilidad">
+        <div class="skill">
           <label>Modelaje</label>
-          <span class="porcentaje">70%</span>
+          <span class="percentage">70%</span>
           <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
             aria-label="Modelaje: 70%">
             <div class="progress-fill" data-value="70"></div>
@@ -149,9 +143,9 @@
           </div>
         </div>
 
-        <div class="habilidad">
+        <div class="skill">
           <label>Pasear al sol</label>
-          <span class="porcentaje">95%</span>
+          <span class="percentage">95%</span>
           <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"
             aria-label="Detección de mantas: 95%">
             <div class="progress-fill" data-value="95"></div>
@@ -163,87 +157,77 @@
       </div>
     </section>
 
-
-
-
-
-
-
-
-
-
-
-
-
+    <!-- Banner -->
     <section class="banner">
-      <!-- <img style="width: 50%; z-index: -99;" src="assets/images/Laredo1.jpg" alt=""> -->
       <div class="banner__img"></div>
-      <div class="banner__content">
+      <div class="banner-content">
         <h2>Whippet Profesional</h2>
         <p>Corredor a ratos , dormilon constante</p>
         <p>Contrata mis servicios</p>
       </div>
     </section>
 
-    <section class="contact" id="contact">
-      <div class="form-container">
-        <h2 class="section__title">¿Quieres contratarme?</h2>
-        <form class="contact__form" method="POST" action="#" novalidate>
+    <!-- Form -->
+    <section id="contact">
+      <div>
+        <h2>¿Quieres contratarme?</h2>
+        <form class="contact-form" method="POST" action="#" validate>
 
-          <div class="form__group">
+          <div class="form-group">
             <label for="name" class="form__label">Nombre</label>
-            <input type="text" id="name" name="name" class="form__input" placeholder="Escribe tu nombre" required>
+            <input type="text" id="name" name="name"  placeholder="Escribe tu nombre" required>
           </div>
 
-          <div class="form__group">
-            <label for="lastname" class="form__label">Apellidos</label>
-            <input type="text" id="lastname" name="lastname" class="form__input" placeholder="Escribe tus apellidos" required>
+          <div class="form-group">
+            <label for="lastname">Apellidos</label>
+            <input type="text" id="lastname" name="lastname"  placeholder="Escribe tus apellidos"
+              required>
           </div>
 
-          <div class="form__group">
-            <label for="phone" class="form__label">Teléfono</label>
-            <input type="tel" id="phone" name="phone" class="form__input" placeholder="Escribe tu teléfono"  required>
+          <div class="form-group">
+            <label for="phone">Teléfono</label>
+            <input type="tel" id="phone" name="phone"  placeholder="Escribe tu teléfono" required>
           </div>
 
-          <fieldset class="form__fieldset">
-            <legend class="form__legend">¿Cómo me conociste?</legend>
+          <fieldset>
+            <legend>¿Cómo me conociste?</legend>
 
-            <div class="form__radio-group">
+            <div>
               <input type="radio" id="university" name="how_met" value="university" required>
-              <label for="university" class="form__radio-label">Universidad</label>
+              <label for="university" >Universidad</label>
             </div>
 
-            <div class="form__radio-group">
+            <div>
               <input type="radio" id="keepcoding" name="how_met" value="keepcoding" required>
-              <label for="keepcoding" class="form__radio-label">Keepcoding kick-off</label>
+              <label for="keepcoding" >Keepcoding kick-off</label>
             </div>
 
-            <div class="form__radio-group">
+            <div>
               <input type="radio" id="school" name="how_met" value="school" required>
-              <label for="school" class="form__radio-label">Colegio</label>
+              <label for="school" >Colegio</label>
             </div>
 
             <div class="form__radio-group">
               <input type="radio" id="github" name="how_met" value="github" required>
-              <label for="github" class="form__radio-label">En Github</label>
+              <label for="github" >En Github</label>
             </div>
           </fieldset>
 
-          <div class="form__group">
+          <div class="form-group">
             <label for="github-user" class="form__label">Github username</label>
-            <input type="text" id="github-user" name="github_user" class="form__input" pattern="^@[^\s]+"
+            <input type="text" id="github-user" name="github_user"  pattern="^@[^\s]+"
               placeholder="@username">
           </div>
 
-          <div class="form__group">
+          <div class="form-group">
             <label for="message" class="form__label">Mensaje de contacto</label>
-            <textarea id="message" name="message" class="form__textarea" maxlength="180" rows="5" required
+            <textarea id="message" name="message"  maxlength="180" rows="5" required
               placeholder="Cuéntame qué tipo de servicio necesitas..."></textarea>
           </div>
 
-          <div class="form__group">
+          <div class="form-group">
             <label class="form__checkbox-label">
-              <input type="checkbox" name="newsletter" class="form__checkbox">
+              <input type="checkbox" name="newsletter" >
               <span class="form__checkmark"></span>
               Quiero acceso a la newsletter
             </label>
@@ -260,16 +244,22 @@
   </main>
 
   <!-- TODO: Iconos/enlaces redes sociales , font weight, (efectos) , font style -->
-
+  <!-- Footer -->
   <footer class="footer">
-  
-
-      <img src="assets/icons/icons8-github-100.png" alt="logo-imagen github">
-      <img src="assets/icons/icons8-linkedin-100.png" alt="logo-imagen linkedin">
-      <img src="assets/icons/icons8-netlify-72.png" alt="logo-imagen netlify">
-      <!-- <p>&copy;Otaku & Obama Productions</p>  -->
-
-    </footer>
+    <div class="footer-icons">
+      <a href="https://github.com/Bitxogm" target="_blank" rel="noopener noreferrer">
+        <img src="assets/icons/icons8-github-100.png" alt="logo-imagen github">
+      </a>
+      <a href="https://www.linkedin.com/in/victor-manuel-gonzalez-moreno/" target="_blank" rel="noopener noreferrer">
+        <img src="assets/icons/icons8-linkedin-100.png" alt="logo-imagen linkedin">
+      </a>
+      <a href="https://app.netlify.com/teams/otaku/projects" target="_blank" rel="noopener noreferrer">
+        <img src="assets/icons/icons8-netlify-72.png" alt="logo-imagen netlify">
+      </a>
+    </div>
+    <p>&copy; 2025 Obama Whippet Portfolio</p>
+    <p>Developed by Víctor González</p>
+  </footer>
 </body>
 
 </html>

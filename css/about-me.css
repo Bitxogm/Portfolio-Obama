@@ -1,5 +1,17 @@
+h1{
+  font-family: var(--text-title);
+  text-align: center;
+}
+
 h2, p {
   text-align: center;
   margin: 0;
   padding: 0.4em;
+}
+h2 {
+  font-family: var(--text-subtitle);
+}
+
+p{
+  font-family: var(--text-paragraph);
 }

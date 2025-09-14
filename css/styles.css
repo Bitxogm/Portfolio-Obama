@@ -5,31 +5,32 @@
 
 :root {
   --bg-color: #7d8da0;
+  --bg-gradient: linear-gradient(to right, #7d8da0, #fff);
   --navbar-bg-color: #000000;
   --navbar-text-color: #ffffff;
   --burguer-menu-color: #3e3a3a;
   --btn-bg-color: #10cf10;
   --bt-bg-color-hover: rgb(130, 204, 130);
   --banner-text: #af1010;
+  --text-title: 'Bad Script', cursive;
+  --text-subtitle: 'DM Serif Text', serif;
+  --text-paragraph:  'Montserrat Alternates', sans-serif;
 }
 
 .content {
   background-color: var(--bg-color);
+  background: var(--bg-gradient);
 }
 
-a.list__item-hidden{
+a.list-item-hidden{
   display: none;
 }
 
 @media screen and (width > 768px) {
-  a.list__item-hidden{
+  a.list-item-hidden{
     display: block;
   }
+  .header{
+    justify-content: space-between;
+  }
 }
-
-
-
-
-
-
-

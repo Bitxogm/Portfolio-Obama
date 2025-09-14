@@ -10,15 +10,16 @@ h1{
   height: 80vh;
   background-repeat: no-repeat;
   background-position: center;
-  /* background-size: cover; */
   color: var(--banner-text);
   font-weight: bold;
   background-image: url('../assets/images/obama_cuerpo.png');
+  
 }
 
-.banner__content {
+.banner-content {
   z-index: 99;
 }
+
 
 @media screen and (width > 768px) {
   .banner{

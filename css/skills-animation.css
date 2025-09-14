@@ -1,36 +1,42 @@
-.habilidad {
+.skills {
+  margin-top: 1em;
+}
+
+.skill {
   border: 2px #3f3636 solid;
   padding: 0.3em;
   border-radius: 10px;
   box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.3);
+
+  label {
+    font-family: var(--text-paragraph);
+  }
 }
 
-
-.gallery__container {
+.gallery-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+  margin-top: 1.5em;
   gap: 20px;
   overflow: hidden;
 }
-
-  
 
 /* Animacion imagenes */
 .image-container {
   overflow: hidden;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  
-  img {
-      width: 200px;
-    height: 200px;
+  margin-top: 0.8em;
 
+  img {
+    width: 200px;
+    height: 200px;
     object-fit: cover;
     transition: transform 0.3s ease-in-out;
   }
-  
+
   &:hover img {
     cursor: pointer;
     transform: scale(1.1);
@@ -42,90 +48,134 @@
   height: 20px;
   width: 200px;
   background-color: lightgray;
-  border-radius: 5px;
+  border-radius: 0px 1em 1em 0px;
   overflow: hidden;
 }
 
-/* Animacon barra */
+/* Animacioón barra */
 .progress-fill {
   height: 20px;
   background-color: #d4af37;
   width: 0%;
   animation: progressbar 2s ease-in-out 0.3s forwards;
+  border-radius: 0px 1em 1em 0px;
 }
 
 /* Animación */
 @keyframes progressbar {
-  0% { width: 0%; }
-  100% { width: 100%; }
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 100%;
+  }
 }
 
 .progress-fill[data-value="85"] {
-  animation: progressbar85 4s ease-in-out 0.5s forwards;
+  animation: progressbar85 2s ease-in-out 0.5s forwards;
 }
+
 .progress-fill[data-value="90"] {
-  animation: progressbar90 4s ease-in-out 1s forwards;
+  animation: progressbar90 2s ease-in-out 1s forwards;
 }
+
 .progress-fill[data-value="99"] {
-  animation: progressbar99 4s ease-in-out 1.5s forwards;
+  animation: progressbar99 2s ease-in-out 1.5s forwards;
 }
+
 .progress-fill[data-value="55"] {
-  animation: progressbar55 4s ease-in-out 2s forwards;
+  animation: progressbar55 2s ease-in-out 2s forwards;
 }
+
 .progress-fill[data-value="70"] {
-  animation: progressbar70 4s ease-in-out 2.5s forwards;
+  animation: progressbar70 2s ease-in-out 2.5s forwards;
 }
+
 .progress-fill[data-value="95"] {
-  animation: progressbar95 4s ease-in-out 3s forwards;
+  animation: progressbar95 2s ease-in-out 3s forwards;
 }
 
 @keyframes progressbar85 {
-  0% { width: 0%; }
-  100% { width: 85%; }
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 85%;
+  }
 }
+
 @keyframes progressbar90 {
-  0% { width: 0%; }
-  100% { width: 90%; }
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 90%;
+  }
 }
+
 @keyframes progressbar99 {
-  0% { width: 0%; }
-  100% { width: 99%; }
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 99%;
+  }
 }
+
 @keyframes progressbar55 {
-  0% { width: 0%; }
-  100% { width: 55%; }
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 55%;
+  }
 }
+
 @keyframes progressbar70 {
-  0% { width: 0%; }
-  100% { width: 70%; }
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 70%;
+  }
 }
+
 @keyframes progressbar95 {
-  0% { width: 0%; }
-  100% { width: 95%; }
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 95%;
+  }
 }
-  
 
 /* Hacer grid template pàra poner tres imagenes por fila  */
-
-
 @media screen and (width > 768px) {
-  .gallery__container {
+  .gallery-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     margin: 0 auto;
+    margin-top: 1.5em;
   }
-    .habilidad {
-    max-width: 300px; 
-    margin: 0 auto; 
+
+  .skill {
+    max-width: 300px;
+    margin: 0 auto;
   }
-  
-  
+
   .image-container img {
     width: 200px;
     height: 200px;
   }
-  
+
   .progress-bar {
     width: 200px;
   }
