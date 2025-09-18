@@ -42,7 +42,7 @@
 }
 
 @media screen and (width > 768px) {
-  .contact__form {
+  .contact-form {
     width: 50%;
     margin: 0 auto;
   }
