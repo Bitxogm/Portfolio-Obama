@@ -29,6 +29,30 @@ html {
 a.list-item-hidden {
   display: none;
 }
+ .projects-layout {
+  width: 80%;
+  margin: 0 auto;
+  width: 768px;
+} 
+h1,
+h2,
+p {
+  text-align: center;
+  margin: 0;
+  padding: 0.4em;
+}
+
+h1 {
+  font-family: var(--text-title);
+}
+
+h2 {
+  font-family: var(--text-subtitle);
+}
+
+p {
+  font-family: var(--text-paragraph);
+}
 
 @media screen and (width > 768px) {
   a.list-item-hidden {

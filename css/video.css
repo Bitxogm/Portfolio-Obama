@@ -5,9 +5,9 @@ h1 {
 }
 
 video {
-  width: 600px;
-  height: 500px;
-  border-radius: 2em;
+  width: 80%;
+  border-radius: 1em;
+  margin-bottom: 1em;
   box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.3);
 }
 
@@ -35,9 +35,11 @@ video {
 } */
 
 .video-container {
+  display: flex;
+  justify-content: center;
   opacity: 0;
   transform: scale(0.8);
-  animation: fadeInZoom 2.5s ease-out 0.8s forwards;
+  animation: fadeInZoom 2s ease-out 0.8s forwards;
 }
 
 @keyframes fadeInZoom {
@@ -47,9 +49,10 @@ video {
   }
 }
 
-@media screen and (width > 768px) {
-  .video-container {
-    display: flex;
-    justify-content: center;
+@media  screen and (width > 768px) {
+  .video-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
   }
 }

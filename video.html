@@ -11,23 +11,80 @@
     rel="stylesheet">
   <link rel="stylesheet" href="./css/normalize.css">
   <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/burguer-menu.css">
   <link rel="stylesheet" href="./css/video.css">
+  <link rel="stylesheet" href="./css/footer.css">
   <title>videos</title>
 </head>
 
 <body>
-  <h1>Videos</h1>
+  <header class="header">
 
-  <div class="video-container">
-    <video autoplay muted loop>
-      <source src="./assets/videos/Video_Obama.mp4" type="video/mp4">
-    </video>
-  </div>
-  <div class="video-container">
-    <video autoplay muted loop>
-      <source src="./assets/videos/Obama_en_sofa.mp4" type="video/mp4">
-    </video>
-  </div>
+    <!-- Burguer Menu -->
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+    <label for="menu-toggle" class="menu-icon burguer-menu-hidden">
+      <span class="burguer-line"></span>
+    </label>
+    <ul class="nav-menu ">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="projects.html">Projects</a></li>
+    </ul>
+
+    <!-- Navbar -->
+    <img src="assets/images/Logo_Whippet.png" alt="Logo-Whippet">
+    <nav class="navbar">
+      <ul class="list">
+        <li>
+          <a href="index.html" class="btn list-item-hidden">Home</a>
+        </li>
+        <li>
+          <a href="projects.html" class="btn list-item-hidden">Projects</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <h1>Mis mejores videos</h1>
+
+  <main class="video-grid">
+      <div class="video-container">
+        <video autoplay muted loop>
+          <source src="./assets/videos/corriendo.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="video-container">
+        <video autoplay muted loop>
+          <source src="./assets/videos/Obama_en_sofa.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="video-container">
+        <video autoplay muted loop>
+          <source src="./assets/videos/de_paseo.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="video-container">
+        <video autoplay muted loop>
+          <source src="./assets/videos/regaton.mp4" type="video/mp4">
+        </video>
+      </div>
+  </main>
+  <footer class="footer">
+    <div class="footer-icons">
+      <a href="https://github.com/Bitxogm" target="_blank" rel="noopener noreferrer">
+        <img src="assets/icons/icons8-github-100.png" alt="logo-imagen github">
+      </a>
+      <a href="https://www.linkedin.com/in/victor-manuel-gonzalez-moreno/" target="_blank" rel="noopener noreferrer">
+        <img src="assets/icons/icons8-linkedin-100.png" alt="logo-imagen linkedin">
+      </a>
+      <a href="https://app.netlify.com/teams/otaku/projects" target="_blank" rel="noopener noreferrer">
+        <img src="assets/icons/icons8-netlify-72.png" alt="logo-imagen netlify">
+      </a>
+    </div>
+    <p>&copy; 2025 Obama Whippet Portfolio</p>
+    <p>Developed by Víctor González</p>
+  </footer>
+
 
 </body>
 
