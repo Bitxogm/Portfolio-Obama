@@ -1,4 +1,4 @@
-h1{
+h1 {
   font-family: var(--text-title);
   text-align: center;
   font-size: 4em;
@@ -48,7 +48,7 @@ video {
 }
 
 @media screen and (width > 768px) {
-  .video-container{
+  .video-container {
     display: flex;
     justify-content: center;
   }

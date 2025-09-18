@@ -8,7 +8,6 @@
   justify-content: center;
   align-items: center;
   cursor: pointer;
-
 }
 
 .burguer-line {
@@ -44,25 +43,25 @@
 .nav-menu {
   display: none;
   position: absolute;
-  top: 50px;
+  top: 45px;
   left: 0;
   background-color: #f9f9f9;
-  width: 90px;
-  padding: 10px;
+  font-family: var(--text-paragraph);
+  width: 110px;
+  padding-left: 5px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
   flex-direction: column;
   border-radius: 0 10px 10px 5px;
+
   a {
     color: var(--burguer-menu-color);
     transition: background-color 0.3s ease-in-out;
   }
-}
 
-a:hover {
-  background-color: var(--btn-bg-color);
+  li {
+    margin-top: 3px;
+  }
 }
-
 
 .menu-toggle {
   display: none;

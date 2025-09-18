@@ -6,9 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Bad+Script&family=DM+Serif+Text:ital@0;1&family=Montserrat+Alternates:ital,wght@0,400;0,700;1,300&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=
+    DM+Serif+Text:ital@0;1&family=Montserrat+Alternates:ital,wght@0,400;0,700;1,300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/header.css">
@@ -19,16 +18,18 @@
   <link rel="stylesheet" href="css/skills-animation.css">
   <link rel="stylesheet" href="css/contact.css">
   <link rel="stylesheet" href="css/footer.css">
+  <meta propertie="og:title" content="Obama-Portfolio">
+  <meta propertie="og:description" content="Portafolio profesional de mi amigo Obama">
+  <meta propertie="og:image"
+    content="https://github.com/Bitxogm/Portfolio-Obama/blob/main/assets/images/Obama_y_Yo.jpg">
 
   <title>Obama - Compañero Professional </title>
 </head>
 
 <body class="content">
-  <!-- Header -->
   <header class="header">
 
     <!-- Burguer Menu -->
-    <!-- TODO : Border, shadows, real links, hover efect -->
     <input type="checkbox" id="menu-toggle" class="menu-toggle">
     <label for="menu-toggle" class="menu-icon burguer-menu-hidden">
       <span class="burguer-line"></span>
@@ -40,7 +41,7 @@
       <li><a href="video.html" target="_blank" rel="noopener noreferrer">Videos</a></li>
     </ul>
 
-    <!-- Logo Whippet -->
+    <!-- Navbar -->
     <img src="assets/images/Logo_Whippet.png" alt="Logo-Whippet">
     <nav class="navbar">
       <ul class="list">
@@ -62,7 +63,6 @@
 
   <main>
     <!-- About Section -->
-    <!-- TODO: Mejorar estilos  -->
     <section id="about-me">
       <h1>Bienvenido </h1>
       <h2>Sobre mí</h2>
@@ -77,8 +77,6 @@
     </section>
 
     <!-- Habilidades/Galeria -->
-    <!-- TODO: Hacer grid template para tamaño supeior a 768 px , tres imagenes por fila -->
-
     <section class="skills" id="habilidades">
       <h2>Mis Habilidades</h2>
       <div class="gallery-container">
@@ -168,25 +166,24 @@
     </section>
 
     <!-- Form -->
-    <section id="contact">
+    <section class="contact-form" id="contact">
       <div>
         <h2>¿Quieres contratarme?</h2>
-        <form class="contact-form" method="post" novalidate>
+        <form method="post" novalidate>
 
           <div class="form-group">
-            <label for="name" class="form__label">Nombre</label>
-            <input type="text" id="name" name="name"  placeholder="Escribe tu nombre" required>
+            <label for="name" class="form-label">Nombre</label>
+            <input type="text" id="name" name="name" placeholder="Escribe tu nombre" required>
           </div>
 
           <div class="form-group">
-            <label for="lastname">Apellidos</label>
-            <input type="text" id="lastname" name="lastname"  placeholder="Escribe tus apellidos"
-              required>
+            <label for="lastname" class="form-label">Apellidos</label>
+            <input type="text" id="lastname" name="lastname" placeholder="Escribe tus apellidos" required>
           </div>
 
           <div class="form-group">
-            <label for="phone">Teléfono</label>
-            <input type="tel" id="phone" name="phone"  placeholder="Escribe tu teléfono" required>
+            <label for="phone" class="form-label">Teléfono</label>
+            <input type="tel" id="phone" name="phone" placeholder="Escribe tu teléfono" required>
           </div>
 
           <fieldset>
@@ -194,56 +191,53 @@
 
             <div>
               <input type="radio" id="university" name="how_met" value="university" required>
-              <label for="university" >Universidad</label>
+              <label for="university">Universidad</label>
             </div>
 
             <div>
               <input type="radio" id="keepcoding" name="how_met" value="keepcoding" required>
-              <label for="keepcoding" >Keepcoding kick-off</label>
+              <label for="keepcoding">Keepcoding kick-off</label>
             </div>
 
             <div>
               <input type="radio" id="school" name="how_met" value="school" required>
-              <label for="school" >Colegio</label>
+              <label for="school">Colegio</label>
             </div>
 
-            <div class="form__radio-group">
+            <div class="form-radio-group">
               <input type="radio" id="github" name="how_met" value="github" required>
-              <label for="github" >En Github</label>
+              <label for="github">En Github</label>
             </div>
           </fieldset>
 
           <div class="form-group">
-            <label for="github-user" class="form__label">Github username</label>
-            <input type="text" id="github-user" name="github_user"  pattern="^@[^\s]+"
-              placeholder="@username">
+            <label for="github-user" class="form-label">Github username</label>
+            <input type="text" id="github-user" name="github_user" pattern="^@[^\s]+" placeholder="@username">
           </div>
 
           <div class="form-group">
-            <label for="message" class="form__label">Mensaje de contacto</label>
-            <textarea id="message" name="message"  maxlength="180" rows="5" required
+            <label for="message" class="form-label">Mensaje de contacto</label>
+            <textarea id="message" name="message" maxlength="180" rows="5" required
               placeholder="Cuéntame qué tipo de servicio necesitas..."></textarea>
           </div>
 
           <div class="form-group">
             <label class="form__checkbox-label">
-              <input type="checkbox" name="newsletter" >
+              <input type="checkbox" name="newsletter">
               <span class="form__checkmark"></span>
               Quiero acceso a la newsletter
             </label>
           </div>
 
-          <div class="form__buttons">
+          <div class="form-buttons">
             <button type="submit" class="btn btn--primary">Enviar</button>
             <button type="reset" class="btn btn--secondary">Reset</button>
           </div>
-
         </form>
       </div>
     </section>
   </main>
 
-  <!-- TODO: Iconos/enlaces redes sociales , font weight, (efectos) , font style -->
   <!-- Footer -->
   <footer class="footer">
     <div class="footer-icons">
@@ -261,5 +255,4 @@
     <p>Developed by Víctor González</p>
   </footer>
 </body>
-
 </html>

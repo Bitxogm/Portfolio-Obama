@@ -1,6 +1,10 @@
-*{
+* {
   box-sizing: border-box;
-  /* outline: 1px dashed red; */
+}
+
+html {
+  /* Para evitar el margen superior que oculta la navabar */
+  scroll-padding-top: 80px;
 }
 
 :root {
@@ -10,11 +14,11 @@
   --navbar-text-color: #ffffff;
   --burguer-menu-color: #3e3a3a;
   --btn-bg-color: #10cf10;
-  --bt-bg-color-hover: rgb(130, 204, 130);
-  --banner-text: #af1010;
+  --bt-bg-color-hover: rgb(19, 70, 19);
+  --banner-text: #e43409;
   --text-title: 'Bad Script', cursive;
   --text-subtitle: 'DM Serif Text', serif;
-  --text-paragraph:  'Montserrat Alternates', sans-serif;
+  --text-paragraph: 'Montserrat Alternates', sans-serif;
 }
 
 .content {
@@ -22,15 +26,16 @@
   background: var(--bg-gradient);
 }
 
-a.list-item-hidden{
+a.list-item-hidden {
   display: none;
 }
 
 @media screen and (width > 768px) {
-  a.list-item-hidden{
+  a.list-item-hidden {
     display: block;
   }
-  .header{
+
+  .header {
     justify-content: space-between;
   }
 }

@@ -6,7 +6,8 @@
   top: 0;
   z-index: 99;
   height: 4em;
-  img{
+
+  img {
     width: 0%;
     max-width: 250px;
     min-width: 200px
@@ -21,5 +22,5 @@
     margin: 0;
     padding-right: 15px;
   }
- 
+
 }

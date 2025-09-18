@@ -1,14 +1,21 @@
 .footer {
-  margin-top: 1em;
+  margin: 10px auto;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  border: 2px green dashed;
-img{
-  width: 60px;
-  height: 60px;
-}
+  max-width: 400px;
+
+  img {
+    width: 60px;
+    height: 60px;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.2);
+      cursor: pointer;
+    }
+  }
 }
 
 .footer-icons {
@@ -16,24 +23,7 @@ img{
   justify-content: center;
   gap: 2rem;
 }
-a:hover{
+
+a:hover {
   background-color: transparent;
-}
- 
-
- 
-
-@media screen and (width > 768px) {
-  .footer {
-    width: 50%;
-    margin: 0 auto
-  }
-  img{
-    
-    transition: transform 0.3s ease;
-    &:hover {
-      transform: scale(1.2);
-      cursor: pointer;
-    }
-  }
 }
