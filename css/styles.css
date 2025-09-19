@@ -39,6 +39,7 @@ p {
 }
 
 h1 {
+  font-size: 3em;
   font-family: var(--text-title);
 }
 

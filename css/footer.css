@@ -1,10 +1,7 @@
 .footer {
-  margin: 10px auto;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  align-items: center;
-  max-width: 400px;
 
   img {
     width: 60px;
@@ -21,7 +18,8 @@
 .footer-icons {
   display: flex;
   justify-content: center;
-  gap: 2rem;
+  padding: 0;
+  gap: 3rem;
 }
 
 a:hover {

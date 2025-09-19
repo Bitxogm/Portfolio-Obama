@@ -36,7 +36,7 @@
     <ul class="nav-menu ">
       <li><a href="#about-me">Sobre mi</a></li>
       <li><a href="#contact">Contacto</a></li>
-      <li><a href="#habilidades">Habilidades</a></li>
+      <li><a href="#habilidades">Skills</a></li>
       <li><a href="video.html" target="_blank" rel="noopener noreferrer">Videos</a></li>
       <li><a href="projects.html" target="_blank" rel="noopener noreferrer">Projects</a></li>
     </ul>
@@ -44,7 +44,7 @@
     <!-- Navbar -->
     <img src="assets/images/Logo_Whippet.png" alt="Logo-Whippet">
     <nav class="navbar">
-      <ul class="list">
+      <ul class="list" aria-hidden="true">
         <li>
           <a href="#about-me" class=" btn list-item-hidden">Sobre mi </a>
         </li>
@@ -67,195 +67,214 @@
   <main>
     <!-- About Section -->
     <section id="about-me">
-      <h1>Bienvenido </h1>
-      <h2>Sobre mí</h2>
-      <p>Soy Obama, un whippet blanco y negro de 7 años con amplia experiencia en carreras de alta velocidad y
-        relajación profesional. Mi especialidad es la combinación perfecta entre elegancia atlética y comodidad
-        doméstica.</p>
-      <p>Cuando no estoy corriendo a 50 km/h, me dedico a la consultoría en optimización de espacios de descanso y
-        al modelaje para fotografía de alta gama. También soy experto en detección de las mantas más cómodas y en
-        la búsqueda del rincón perfecto para la siesta.</p>
-      <p>Con más de 7 años de experiencia profesional en el arte de la relajación, he perfeccionado técnicas
-        únicas que combinan la máxima velocidad con el máximo confort.</p>
+      <article>
+        <h1>Bienvenido </h1>
+        <h2>Sobre mí</h2>
+        <p>Soy Obama, un whippet blanco y negro de 7 años con amplia experiencia en carreras de alta velocidad y
+          relajación profesional. Mi especialidad es la combinación perfecta entre elegancia atlética y comodidad
+          doméstica.</p>
+        <p>Cuando no estoy corriendo a 50 km/h, me dedico a la consultoría en optimización de espacios de descanso y
+          al modelaje para fotografía de alta gama. También soy experto en detección de las mantas más cómodas y en
+          la búsqueda del rincón perfecto para la siesta.</p>
+        <p>Con más de 7 años de experiencia profesional en el arte de la relajación, he perfeccionado técnicas
+          únicas que combinan la máxima velocidad con el máximo confort.</p>
+      </article>
     </section>
 
     <!-- Habilidades/Galeria -->
     <section class="skills" id="habilidades">
       <h2>Mis Habilidades</h2>
-      <div class="gallery-container">
+      <ul class="gallery-container">
+        <li class="skill">
+          <article>
+            <label>Elegancia</label>
+            <span class="percentage">85%</span>
+            <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"
+              aria-label="Elegancia: 85%">
+              <div class="progress-fill" data-value="85"></div>
+            </div>
+            <div class="image-container">
+              <img src="assets/images/perfil.jpg" alt="Obama posando elegantemente">
+            </div>
+          </article>
+        </li>
 
-        <div class="skill">
-          <label>Elegancia</label>
-          <span class="percentage">85%</span>
-          <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"
-            aria-label="Elegancia: 85%">
-            <div class="progress-fill" data-value="85"></div>
-          </div>
-          <div class="image-container">
-            <img src="assets/images/perfil.jpg" alt="Obama posando elegantemente">
-          </div>
-        </div>
+        <li class="skill">
+          <article>
+            <label>Velocidad</label>
+            <span class="percentage">90%</span>
+            <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"
+              aria-label="Velocidad: 90%">
+              <div class="progress-fill" data-value="90"></div>
+            </div>
+            <div class="image-container">
+              <img src="assets/images/In_the_beach.jpg" alt="Obama tumbado en la playa">
+            </div>
+          </article>
+        </li>
 
-        <div class="skill">
-          <label>Velocidad</label>
-          <span class="percentage">90%</span>
-          <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"
-            aria-label="Velocidad: 90%">
-            <div class="progress-fill" data-value="90"></div>
-          </div>
-          <div class="image-container">
-            <img src="assets/images/In_the_beach.jpg" alt="Obama tumbado en la playa">
-          </div>
-        </div>
+        <li class="skill">
+          <article>
+            <label>Relajación</label>
+            <span class="percentage">99%</span>
+            <div class="progress-bar" role="progressbar" aria-valuenow="99" aria-valuemin="0" aria-valuemax="100"
+              aria-label="Relajación: 99%">
+              <div class="progress-fill" data-value="99"></div>
+            </div>
+            <div class="image-container">
+              <img src="assets/images/In_the_bed.jpg" alt="Obama relajándose en la cama">
+            </div>
+          </article>
+        </li>
 
-        <div class="skill">
-          <label>Relajación</label>
-          <span class="percentage">99%</span>
-          <div class="progress-bar" role="progressbar" aria-valuenow="99" aria-valuemin="0" aria-valuemax="100"
-            aria-label="Relajación: 99%">
-            <div class="progress-fill" data-value="99"></div>
-          </div>
-          <div class="image-container">
-            <img src="assets/images/In_the_bed.jpg" alt="Obama relajándose en la cama">
-          </div>
-        </div>
+        <li class="skill">
+          <article>
+            <label>Cata de sofá</label>
+            <span class="percentage">55%</span>
+            <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"
+              aria-label="Optimización de sofá: 55%">
+              <div class="progress-fill" data-value="55"></div>
+            </div>
+            <div class="image-container">
+              <img src="assets/images/Sleeping.jpg" alt="Obama durmiendo en el sofá">
+            </div>
+          </article>
+        </li>
 
-        <div class="skill">
-          <label>Cata de sofá</label>
-          <span class="percentage">55%</span>
-          <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"
-            aria-label="Optimización de sofá: 55%">
-            <div class="progress-fill" data-value="55"></div>
-          </div>
-          <div class="image-container">
-            <img src="assets/images/Sleeping.jpg" alt="Obama durmiendo en el sofá">
-          </div>
-        </div>
+        <li class="skill">
+          <article>
+            <label>Modelaje</label>
+            <span class="percentage">70%</span>
+            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
+              aria-label="Modelaje: 70%">
+              <div class="progress-fill" data-value="70"></div>
+            </div>
+            <div class="image-container">
+              <img src="assets/images/Obama2.jpg" alt="Obama en sesión de modelaje">
+            </div>
+          </article>
+        </li>
 
-        <div class="skill">
-          <label>Modelaje</label>
-          <span class="percentage">70%</span>
-          <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
-            aria-label="Modelaje: 70%">
-            <div class="progress-fill" data-value="70"></div>
-          </div>
-          <div class="image-container">
-            <img src="assets/images/Obama2.jpg" alt="Obama en sesión de modelaje">
-          </div>
-        </div>
-
-        <div class="skill">
-          <label>Pasear al sol</label>
-          <span class="percentage">95%</span>
-          <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"
-            aria-label="Detección de mantas: 95%">
-            <div class="progress-fill" data-value="95"></div>
-          </div>
-          <div class="image-container">
-            <img src="assets/images/Big.jpg" alt="Obama al sol en la playa">
-          </div>
-        </div>
-      </div>
+        <li class="skill">
+          <article>
+            <label>Pasear al sol</label>
+            <span class="percentage">95%</span>
+            <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"
+              aria-label="Detección de mantas: 95%">
+              <div class="progress-fill" data-value="95"></div>
+            </div>
+            <div class="image-container">
+              <img src="assets/images/Big.jpg" alt="Obama al sol en la playa">
+            </div>
+          </article>
+        </li>
+      </ul>
     </section>
 
     <!-- Banner -->
     <section class="banner">
       <div class="banner__img"></div>
-      <div class="banner-content">
+      <article class="banner-content">
         <h2>Whippet Profesional</h2>
         <p>Corredor a ratos , dormilon constante</p>
         <p>Contrata mis servicios</p>
-      </div>
+      </article>
     </section>
 
     <!-- Form -->
     <section class="contact-form" id="contact">
-      <div>
-        <h2>¿Quieres contratarme?</h2>
-        <form method="post" novalidate>
+      <h2>¿Quieres contratarme?</h2>
+      <form method="post" novalidate>
 
-          <div class="form-group">
-            <label for="name" class="form-label">Nombre</label>
-            <input type="text" id="name" name="name" placeholder="Escribe tu nombre" required>
+        <div class="form-group">
+          <label for="name" class="form-label">Nombre</label>
+          <input type="text" id="name" name="name" placeholder="Escribe tu nombre" required>
+        </div>
+
+        <div class="form-group">
+          <label for="lastname" class="form-label">Apellidos</label>
+          <input type="text" id="lastname" name="lastname" placeholder="Escribe tus apellidos" required>
+        </div>
+
+        <div class="form-group">
+          <label for="phone" class="form-label">Teléfono</label>
+          <input type="tel" id="phone" name="phone" placeholder="Escribe tu teléfono" required>
+        </div>
+
+        <fieldset>
+          <legend>¿Cómo me conociste?</legend>
+
+          <div>
+            <input type="radio" id="university" name="how_met" value="university" required>
+            <label for="university">Universidad</label>
           </div>
 
-          <div class="form-group">
-            <label for="lastname" class="form-label">Apellidos</label>
-            <input type="text" id="lastname" name="lastname" placeholder="Escribe tus apellidos" required>
+          <div>
+            <input type="radio" id="keepcoding" name="how_met" value="keepcoding" required>
+            <label for="keepcoding">Keepcoding kick-off</label>
           </div>
 
-          <div class="form-group">
-            <label for="phone" class="form-label">Teléfono</label>
-            <input type="tel" id="phone" name="phone" placeholder="Escribe tu teléfono" required>
+          <div>
+            <input type="radio" id="school" name="how_met" value="school" required>
+            <label for="school">Colegio</label>
           </div>
 
-          <fieldset>
-            <legend>¿Cómo me conociste?</legend>
-
-            <div>
-              <input type="radio" id="university" name="how_met" value="university" required>
-              <label for="university">Universidad</label>
-            </div>
-
-            <div>
-              <input type="radio" id="keepcoding" name="how_met" value="keepcoding" required>
-              <label for="keepcoding">Keepcoding kick-off</label>
-            </div>
-
-            <div>
-              <input type="radio" id="school" name="how_met" value="school" required>
-              <label for="school">Colegio</label>
-            </div>
-
-            <div class="form-radio-group">
-              <input type="radio" id="github" name="how_met" value="github" required>
-              <label for="github">En Github</label>
-            </div>
-          </fieldset>
-
-          <div class="form-group">
-            <label for="github-user" class="form-label">Github username</label>
-            <input type="text" id="github-user" name="github_user" pattern="^@[^\s]+" placeholder="@username">
+          <div class="form-radio-group">
+            <input type="radio" id="github" name="how_met" value="github" required>
+            <label for="github">En Github</label>
           </div>
+        </fieldset>
 
-          <div class="form-group">
-            <label for="message" class="form-label">Mensaje de contacto</label>
-            <textarea id="message" name="message" maxlength="180" rows="5" required
-              placeholder="Cuéntame qué tipo de servicio necesitas..."></textarea>
-          </div>
+        <div class="form-group">
+          <label for="github-user" class="form-label">Github username</label>
+          <input type="text" id="github-user" name="github_user" pattern="^@[^\s]+" placeholder="@username">
+        </div>
 
-          <div class="form-group">
-            <label class="form__checkbox-label">
-              <input type="checkbox" name="newsletter">
-              <span class="form__checkmark"></span>
-              Quiero acceso a la newsletter
-            </label>
-          </div>
+        <div class="form-group">
+          <label for="message" class="form-label">Mensaje de contacto</label>
+          <textarea id="message" name="message" maxlength="180" rows="5" required
+            placeholder="Cuéntame qué tipo de servicio necesitas..."></textarea>
+        </div>
 
-          <div class="form-buttons">
-            <button type="submit" class="btn btn--primary">Enviar</button>
-            <button type="reset" class="btn btn--secondary">Reset</button>
-          </div>
-        </form>
-      </div>
+        <div class="form-group">
+          <label class="form__checkbox-label">
+            <input type="checkbox" name="newsletter">
+            <span class="form__checkmark"></span>
+            Quiero acceso a la newsletter
+          </label>
+        </div>
+
+        <div class="form-buttons">
+          <button type="submit" class="btn btn--primary">Enviar</button>
+          <button type="reset" class="btn btn--secondary">Reset</button>
+        </div>
+      </form>
     </section>
   </main>
 
   <!-- Footer -->
   <footer class="footer">
-    <div class="footer-icons">
-      <a href="https://github.com/Bitxogm" target="_blank" rel="noopener noreferrer">
-        <img src="assets/icons/icons8-github-100.png" alt="logo-imagen github">
-      </a>
-      <a href="https://www.linkedin.com/in/victor-manuel-gonzalez-moreno/" target="_blank" rel="noopener noreferrer">
-        <img src="assets/icons/icons8-linkedin-100.png" alt="logo-imagen linkedin">
-      </a>
-      <a href="https://app.netlify.com/teams/otaku/projects" target="_blank" rel="noopener noreferrer">
-        <img src="assets/icons/icons8-netlify-72.png" alt="logo-imagen netlify">
-      </a>
-    </div>
+    <ul class="footer-icons">
+      <li>
+        <a href="https://github.com/Bitxogm" target="_blank" rel="noopener noreferrer">
+          <img src="assets/icons/icons8-github-100.png" alt="Perfil de GitHub de Víctor González">
+        </a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/victor-manuel-gonzalez-moreno/" target="_blank" rel="noopener noreferrer">
+          <img src="assets/icons/icons8-linkedin-100.png" alt="Perfil de LinkedIn de Víctor González">
+        </a>
+      </li>
+      <li>
+        <a href="https://app.netlify.com/teams/otaku/projects" target="_blank" rel="noopener noreferrer">
+          <img src="assets/icons/icons8-netlify-72.png" alt="Perfil de Netlify de Victor González">
+        </a>
+      </li>
+    </ul>
     <p>&copy; 2025 Obama Whippet Portfolio</p>
     <p>Developed by Víctor González</p>
   </footer>
+
 </body>
+
 </html>
