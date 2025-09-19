@@ -1,0 +1,35 @@
+body {
+  background: #1a1a1a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.error-container {
+  text-align: center;
+  img{
+    max-width: 300px;
+  }
+}
+
+.error-link {
+  display: flex;
+  justify-content: center;
+  a{
+    margin-top: 3em;
+    width: 200px;
+  }
+}
+
+@media screen and (width > 768px) {
+  .error-container {
+    img{
+      max-width: 500px;
+    }
+    a{
+      margin-top: 4em;
+      width: 300px;
+    }
+  }
+}
