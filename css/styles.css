@@ -29,11 +29,7 @@ html {
 a.list-item-hidden {
   display: none;
 }
- .projects-layout {
-  width: 80%;
-  margin: 0 auto;
-  width: 768px;
-} 
+
 h1,
 h2,
 p {

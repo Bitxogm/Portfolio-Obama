@@ -1,0 +1,26 @@
+body {
+  background: var(--bg-gradient);
+}
+
+.projects-layout {
+  max-width: 1024px;
+  margin: 0 auto;
+  img{
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 15px 10px 15px rgba(0, 0, 0, 0.3);
+  }
+}
+
+.projects-list {
+  margin: 0;
+  padding: 0;
+  display:  grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 10px;
+  figcaption {
+    text-align: center;
+    font-family: var(--text-subtitle);
+    font-size: 1.2em;
+  }
+}

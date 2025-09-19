@@ -1,3 +1,7 @@
+body {
+  background: var(--bg-gradient);
+}
+
 h1 {
   font-family: var(--text-title);
   text-align: center;
