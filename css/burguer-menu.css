@@ -1,6 +1,7 @@
 .menu-icon {
   width: 35px;
   height: 35px;
+  margin-left: 0.5em;
   border: 2px solid var(--navbar-text-color);
   border-radius: 50%;
   position: relative;

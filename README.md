@@ -10,7 +10,7 @@ Este proyecto es un portfolio web responsivo desarrollado como práctica para el
 
 ✅ Requisitos Implementados
 
-Estructura HTML semántica completa
+Estructura HTML semántica 
 CSS puro sin frameworks externos 
 Diseño responsive Mobile First
 Menú hamburguesa implementado solo con CSS

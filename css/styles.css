@@ -32,6 +32,7 @@ a.list-item-hidden {
 
 h1,
 h2,
+h3,
 p {
   text-align: center;
   margin: 0;
@@ -44,12 +45,22 @@ h1 {
 }
 
 h2 {
-  font-family: var(--text-subtitle);
+  font-family: var(--text-title)
 }
 
 p {
   font-family: var(--text-paragraph);
 }
+
+button:hover {
+  cursor: pointer;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  cursor: pointer;
+}
+
 
 @media screen and (width > 768px) {
   a.list-item-hidden {
